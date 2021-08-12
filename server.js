@@ -14,4 +14,18 @@ server.set('view engine', 'hbs');
 
 // Your routes/router(s) should go here
 server.use('/', routes);
+
+server.get ('/', (req, res) =>{
+  const template = 'home'
+  getData((err, initialData) =>{
+    res.render(template, initialData)
+  })
+})
+
+// server.get ('/', (req, res) =>{
+//   res.render ('home')
+// })
+
+
+
 module.exports = server;
