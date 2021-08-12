@@ -1,12 +1,12 @@
 {
-  "name": "pupparazzi",
-  "version": "2.0.0",
-  "description": "Challenge to learn server side rendering and callbacks",
+  "name": "never-ending-story",
+  "version": "0.0.1",
+  "description": "Team Challenge  - Team 2 - Cody, Lee, Rodrigo and Kerry - Week 2, Manaia 2021",
   "main": "index.js",
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "node index",
+    "start": "node index.js",
     "dev": "nodemon index --ignore data.json",
     "lint": "eslint .",
     "test": "jest --watchAll"
