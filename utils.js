@@ -20,12 +20,13 @@ function getStoryData (cb) {
     try{
     cb(null, storyData)
     } catch (parseErr){
+      console.log(parseErr)
       console.error("Catch Error: Something went wrong reading the Stories data")
     } 
   })
 }
 
-function updateStoryData(pupId, newStoryData) {
+function updateStoryData(newStoryData) {
   console.log(newStoryData)
   //write the updated puppy data
   try {
@@ -36,7 +37,8 @@ function updateStoryData(pupId, newStoryData) {
         return
       }
     })
-  } catch {
+  } catch(parseErr) {
+    console.log(parseErr)
     console.error('Catch Error: Story update problem')
   } 
 }
