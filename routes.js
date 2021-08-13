@@ -2,13 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const checkWord = require('check-word');
-
 const words = checkWord('en');
 const { getStoryData, updateStoryData} = require('./utils')
-
 const router = express.Router();
 module.exports = router;
-
 
 // GET /puppies/id
 router.get('/', (req, res) => {
