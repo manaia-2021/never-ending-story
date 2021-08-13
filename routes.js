@@ -45,5 +45,5 @@ router.post('/', (req, res) => {
   } else{
     console.log("not a word")
   } 
-  res.redirect(`${req.baseUrl}`)
+  res.redirect(`${req.originalUrl}`)
 })
